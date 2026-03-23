@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int angka, ketemu = 0;
+
+    printf("Masukkan angka: ");
+    scanf("%d", &angka);
+
+    for(int i = 1; i <= angka; i++) {
+        if(i == angka && angka % 3 == 0) {
+            ketemu = 1;
+        }
+    }
+
+    if(ketemu)
+        printf("%d adalah kelipatan 3\n", angka);
+    else
+        printf("%d bukan kelipatan 3\n", angka);
+
+    return 0;
+}
